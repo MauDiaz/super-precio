@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+
+body{
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.guardar > a{
+   display:  inline-block;   
+}
+
+.modal-title{
+    text-decoration: underline;
+    text-decoration-color: fuchsia;
+}
+
+.btn-fuchsia {
+
+    background-color: fuchsia !important;
+    color: #fff;
+    
+}
+
+.btn-fuchsia :hover{
+    background-color: #a8328f;
+}
