@@ -1,4 +1,4 @@
-s<div class="content-wrapper" style="min-height: 1761.5px;">
+<div class="content-wrapper" style="min-height: 1761.5px;">
   
   <section class="content-header">
       <div class="container-fluid">
@@ -14,7 +14,7 @@ s<div class="content-wrapper" style="min-height: 1761.5px;">
   <section class="content">
       <div class="container-fluid">
             <div class="row">
-                <button class="btn btn-flat btn-fuchsia" data-toggle="modal" data-target="#departamento-modal">Agregar Departamento</button>
+                <button class="btn btn-flat btn-sm btn-fuchsia" data-toggle="modal" data-target="#departamento-modal">Agregar Departamento</button>
             </div>
                   <div class="card-body table-full-width table-responsive">
                     <table class="table table-striped table-sm text-center" id="table-default">
@@ -51,6 +51,7 @@ s<div class="content-wrapper" style="min-height: 1761.5px;">
 <div class="modal fade" id="departamento-modal" tabindex="-1" role="dialog"  aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
+    <form role="form" method="post" class="needs-validation" novalidate>
       <div class="modal-header">
         <h5 class="modal-title" >Sistema de Ventas</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -89,9 +90,10 @@ s<div class="content-wrapper" style="min-height: 1761.5px;">
 
       </div>
         <div class="guardar">
-        <a  type="button"><img src="assets/img/guardar.svg" alt="" style="width: 100px;">
-        <a type="button"><img src="assets/img/nuevo.svg" alt="" style="width: 100px;">
+            <button  type="submit" style="border: none;"><img src="assets/img/guardar.svg" alt="" style="width: 100px;"></button>
+            <button type="button"style="border: none;"><img src="assets/img/nuevo.svg" alt="" style="width: 100px;"></button>
         </div>
+        </form>
     </div>
   </div>
 </div>

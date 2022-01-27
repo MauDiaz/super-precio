@@ -19,20 +19,10 @@
         </div>
 
      
-        <!-- Sidebar Menu -->
+        <!-- Menu -->
         
         <nav class="mt-2">
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-
-                <!-- <li class="nav-item">
-                    <a href="#" class="nav-link">
-                        <i class="nav-icon fas fa-tachometer-alt"></i>
-                        <p>
-                            Dashboard
-                            <i class="right fas fa-angle-left"></i>
-                        </p>
-                    </a>
-                </li> -->
 
                 <li class="nav-item">
                     <a href="productos" class="nav-link">
@@ -52,6 +42,22 @@
                     </a>
                 </li>
                 <li class="nav-item">
+                    <a href="proveedores" class="nav-link">
+                        <i class="nav-icon fas fa-user-cog"></i>
+                        <p>
+                            Proveedor
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="usuarios" class="nav-link">
+                        <i class="nav-icon fas fa-users"></i>
+                        <p>
+                            Usuarios
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
                     <a href="ventas" class="nav-link">
                         <i class="nav-icon fas fa-chart-pie"></i>
                         <p>
@@ -60,34 +66,34 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="venues" class="nav-link">
-                        <i class="nav-icon fas fa-store"></i>
+                    <a href="cotizaciones" class="nav-link">
+                        <i class="nav-icon fas fa-dollar-sign"></i>
                         <p>
-                            Venues
+                            Cotizacion
                         </p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="proveedores" class="nav-link">
-                        <i class="nav-icon fas fa-user-cog"></i>
-                        <p>
-                            Proveedores
-                        </p>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="empleados" class="nav-link">
-                        <i class="nav-icon fas fa-users"></i>
-                        <p>
-                            Empleados
-                        </p>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="cortecaja" class="nav-link">
+                    <a href="pedidos" class="nav-link">
                         <i class="nav-icon fas fa-chart-bar"></i>
                         <p>
-                            Corte de Caja
+                            Pedidos
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="compras" class="nav-link">
+                        <i class="nav-icon fas fa-shopping-cart"></i>
+                        <p>
+                            Compras
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="ajustes" class="nav-link">
+                        <i class="nav-icon fas fa-tools"></i>
+                        <p>
+                            Ajustes
                         </p>
                     </a>
                 </li>
@@ -104,14 +110,6 @@
                         <i class="nav-icon fab fa-windows"></i>
                         <p>
                             Sistema
-                        </p>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="herrammientas" class="nav-link">
-                        <i class="nav-icon fas fa-tools"></i>
-                        <p>
-                            Herramientas
                         </p>
                     </a>
                 </li>

@@ -1,4 +1,4 @@
-s<div class="content-wrapper" style="min-height: 1761.5px;">
+<div class="content-wrapper" style="min-height: 1761.5px;">
   
   <section class="content-header">
       <div class="container-fluid">
@@ -14,7 +14,7 @@ s<div class="content-wrapper" style="min-height: 1761.5px;">
   <section class="content">
       <div class="container-fluid">
             <div class="row">
-                <button class="btn btn-flat btn-fuchsia" data-toggle="modal" data-target="#proveedores-modal">Agregar Proveedor</button>
+                <button class="btn btn-flat btn-sm btn-fuchsia" data-toggle="modal" data-target="#proveedores-modal">Agregar Proveedor</button>
             </div>
                   <div class="card-body table-full-width table-responsive">
                     <table class="table table-striped table-sm text-center" id="table-default">
@@ -98,7 +98,7 @@ s<div class="content-wrapper" style="min-height: 1761.5px;">
             <div class="col-md-4">
                 <div class="form-group">
                     <label class="bmd-label-floating">RFC</label>
-                    <input type="text" class="form-control form-control-sm" name="rfc-prov" maxlength="10" pattern="[A-Za-z0-9]{,10}" required>
+                    <input type="text" class="form-control form-control-sm" name="rfc-prov" maxlength="10" pattern="[A-Za-z0-9]{10}" required>
                     <div class="valid-feedback">Valido!</div>
                     <div class="invalid-feedback">Maximo 10 caracteres se permiten.</div>
                 </div>
@@ -106,7 +106,7 @@ s<div class="content-wrapper" style="min-height: 1761.5px;">
             <div class="col-md-8">
                 <div class="form-group">
                     <label class="bmd-label-floating">Direccion</label>
-                    <input type="text" class="form-control form-control-sm" name="dir-prov" minlength="4" maxlength="60" pattern="[A-Za-z0-9-/_.]{4,60}" required>
+                    <input type="text" class="form-control form-control-sm" name="dir-prov" minlength="4" maxlength="60" pattern="[A-Za-z0-9-/_. ]{4,60}" required>
                     <div class="valid-feedback">Valido!</div>
                     <div class="invalid-feedback">La direccion debe tener minimo 4 caracteres y hasta 60</div>
                 </div>
@@ -116,15 +116,15 @@ s<div class="content-wrapper" style="min-height: 1761.5px;">
             <div class="col-md-4">
                 <div class="form-group">
                     <label class="bmd-label-floating">Codigo Postal</label>
-                    <input type="text" class="form-control form-control-sm" name="cp-prov" minlength="5" maxlength="5" pattern="[0-9]{5,5}" required>
+                    <input type="text" class="form-control form-control-sm" name="cp-prov" minlength="5" maxlength="5" pattern="[0-9]{5}" required>
                     <div class="valid-feedback">Valido!</div>
-                    <div class="invalid-feedback">Maximo 5 caracteres se permiten.</div>
+                    <div class="invalid-feedback">Solo Caracteres Numericos</div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="form-group">
                     <label class="bmd-label-floating">Ciudad</label>
-                    <input type="text" class="form-control form-control-sm" name="ciudad-prov" minlength="4" maxlength="15" pattern="[A-Za-z0-9]{4,15}" required>
+                    <input type="text" class="form-control form-control-sm" name="ciudad-prov" minlength="4" maxlength="15" pattern="[A-Za-z0-9 ]{4,15}" required>
                     <div class="valid-feedback">Valido!</div>
                     <div class="invalid-feedback">Minimo 4 y Maximo 15 caracteres se permiten.</div>
                 </div>
@@ -132,9 +132,9 @@ s<div class="content-wrapper" style="min-height: 1761.5px;">
             <div class="col-md-4">
                 <div class="form-group">
                     <label class="bmd-label-floating">Estado</label>
-                    <input type="text" class="form-control form-control-sm" name="estado-prov" minlength="4" maxlength="15" pattern="[A-Za-z0-9]{4,15}" required>
+                    <input type="text" class="form-control form-control-sm" name="estado-prov" minlength="4" maxlength="15" pattern="[A-Za-z]{4,15}" required>
                     <div class="valid-feedback">Valido!</div>
-                    <div class="invalid-feedback">Minimo 4 y Maximo 15 caracteres se permiten.</div>
+                    <div class="invalid-feedback">Minimo 4 y Maximo 15 caracteres solo letras.</div>
                 </div>
             </div>
         </div>
@@ -144,13 +144,13 @@ s<div class="content-wrapper" style="min-height: 1761.5px;">
                     <label class="bmd-label-floating">Telefono</label>
                     <input type="text" class="form-control form-control-sm" name="tel-prov" maxlength="10" pattern="[0-9]{10}"required>
                     <div class="valid-feedback">Valido!</div>
-                    <div class="invalid-feedback">Maximo 10 caracteres se permiten.</div>
+                    <div class="invalid-feedback">Maximo 10 caracteres solo numeros.</div>
                     </div>
             </div>
             <div class="col-md-8">
                 <div class="form-group">
                     <label class="bmd-label-floating">Articulos</label>
-                    <input type="text" class="form-control form-control-sm" name="dir-prov" minlength="4" maxlength="60" pattern="[A-Za-z0-9-/_.]{4,60}" required>
+                    <input type="text" class="form-control form-control-sm" name="dir-prov" minlength="4" maxlength="60" pattern="[A-Za-z0-9-/_. ]{4,60}" required>
                     <div class="valid-feedback">Valido!</div>
                     <div class="invalid-feedback">Los articulos debe tener minimo 4 caracteres y hasta 60</div>
                 </div>
@@ -166,8 +166,8 @@ s<div class="content-wrapper" style="min-height: 1761.5px;">
         </div>    
     
         <div class="guardar">
-            <button type="submit"><img src="assets/img/guardar.svg" alt="" style="width: 100px;"></button>
-            <a type="button"><img src="assets/img/nuevo.svg" alt="" style="width: 100px;">
+            <button type="submit" style="border: none;"><img src="assets/img/guardar.svg" alt="" style="width: 100px;"></button>
+            <button type="button" style="border: none;" ><img src="assets/img/nuevo.svg" alt="" style="width: 100px;"></button>
         </div>
     
     </div>

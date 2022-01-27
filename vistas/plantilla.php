@@ -10,8 +10,6 @@
 
     <!-- vinculos CSS -->
 
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
     <link rel="stylesheet" href="assets/plugins/css/adminlte.min.css">
@@ -44,6 +42,7 @@
     <div class="wrapper">
 
         <?php
+
         include "vistas/paginas/modulos/header.php";
 
         include "vistas/paginas/modulos/sidebar.php";
@@ -51,23 +50,26 @@
         if(isset($_GET["ruta"])){
 
             if($_GET["ruta"] == "departamentos" ||
-               $_GET["ruta"] == "cortecaja" ||
-               $_GET["ruta"] == "empleados" ||
-               $_GET["ruta"] == "herramientas" ||
+               $_GET["ruta"] == "pedidos" ||
+               $_GET["ruta"] == "usuarios" ||
+               $_GET["ruta"] == "ajustes" ||
                $_GET["ruta"] == "inicio" ||
                $_GET["ruta"] == "productos" ||
                $_GET["ruta"] == "proveedores" ||
+               $_GET["ruta"] == "compras" ||
                $_GET["ruta"] == "reportes" ||
                $_GET["ruta"] == "sistema" ||
                $_GET["ruta"] == "ventas" ||
-               $_GET["ruta"] == "venues"
-            ){
+               $_GET["ruta"] == "login")
+               
+               {
+
                 include "vistas/paginas/".$_GET["ruta"].".php";
+            }else{
+
+                include "vistas/paginas/404.php";
+
             }
-
-        }else{
-
-            include "vistas/paginas/inicio.php";
 
         }
         
@@ -76,6 +78,7 @@
     </div>
 
     <script src="assets/js/datatables.js"></script>
+    
     <script src="assets/js/forms.js"></script>
 
 </body>

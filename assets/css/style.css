@@ -23,3 +23,42 @@ body{
 .btn-fuchsia :hover{
     background-color: #a8328f;
 }
+
+.rounded{
+    border-radius: 50px !important;
+}
+
+.content-header{
+    padding: 5px !important;
+}
+
+.bottomed{
+    position: absolute;
+    bottom: 20px;
+}
+
+.backgrounded{
+    background-color: #f3f3f3;
+    width: 100%;
+    height: 150px;
+    /* border: solid 1px #000; */
+    padding-top:35px;
+}
+
+.enviar{
+    width: 100px;
+    
+
+}
+
+.padded{
+    padding: 0 15px 15px !important;
+}
+
+.padded2{
+    padding: 0 25px 25px !important;
+}
+
+.padded3{
+    padding: 0 5px 5px !important;
+}
